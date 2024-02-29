@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -p 4000",
     "lint": "next lint",
-    "db-sync": "npx prisma format && npx prisma db push"
+    "db-sync": "npx prisma format && npx prisma db push",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
