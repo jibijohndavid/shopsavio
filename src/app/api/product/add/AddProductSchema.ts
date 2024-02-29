@@ -20,13 +20,6 @@ export const AddProductSchema = z.object({
         "Product shortDescription should contain alphanumeric values only",
     })
     .optional(),
-  stock: z.coerce
-    .number({
-      required_error: "Product stock qty is required",
-      invalid_type_error: "Only numeric values allowed",
-    })
-    .min(1, "Stock is required")
-    .int(),
   price: z.coerce
     .number({
       required_error: "Product price is required",
