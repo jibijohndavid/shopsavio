@@ -33,6 +33,14 @@ export const AddProductSchema = z.object({
       invalid_type_error: "Only numeric values allowed",
     })
     .min(1, "Price is required"),
+  slug: z.string({
+    invalid_type_error:
+      "Product slug is required & should contain alphanumeric values only",
+  }),
+  affiliateUrl: z.string({
+    invalid_type_error:
+      "Product Affiliate URL is required & should contain alphanumeric values only",
+  }),
 });
 
 export type AddProductInput = z.infer<typeof AddProductSchema>;

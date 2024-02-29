@@ -35,6 +35,8 @@ model Product {
   stock            Int       @default(0)
   imageUrl         String?
   price            Float     @default(0.0)
+  affiliateUrl     String
+  slug             String
   isActive         Boolean   @default(true)
   isDeleted        Boolean   @default(false)
   createdAt        DateTime? @default(now())
