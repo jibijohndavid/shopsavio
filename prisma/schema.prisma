@@ -32,7 +32,6 @@ model Product {
   name             String
   description      String?
   shortDescription String?
-  stock            Int       @default(0)
   imageUrl         String?
   price            Float     @default(0.0)
   affiliateUrl     String
