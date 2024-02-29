@@ -126,18 +126,6 @@ export default function AddProductModal({
                           {errors.price?.message}
                         </p>
                       </div>
-
-                      <div>
-                        <label className="input-text-label">Stock</label>
-                        <input
-                          className="input-text"
-                          placeholder="Enter quantity"
-                          {...register("stock")}
-                        />
-                        <p className="text-xs text-red-400 ml-2 mt-1">
-                          {errors.stock?.message}
-                        </p>
-                      </div>
                     </div>
 
                     <div className="mt-14 flex gap-x-10 justify-between">
