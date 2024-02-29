@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+root {
+  --foreground-rgb: 253, 253, 253;
+  --primary: rgb(31 42 55);
+  --secondary: rgba(20, 184, 166, 0.4);
+  --tertiary: rgba(20, 184, 166, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --primary: rgb(31 42 55);
+    --secondary: rgba(20, 184, 166, 0.4);
+    --tertiary: rgba(20, 184, 166, 1);
+  }
+}
+
+body {
+  color: #e5e7eb;
+  background-color: #111827;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 17px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--tertiary);
+}
+
+.input-text {
+  @apply mt-2 flex h-12 w-full rounded-md bg-[#0a0a0a] p-3 outline-none text-[#e5e7eb] placeholder:text-[#676e7c];
+}
+
+.input-textarea {
+  @apply h-auto;
+}
+
+.input-text-label {
+  @apply text-sm font-medium px-3 text-[#e5e7eb];
+}
+
+.button {
+  @apply w-full rounded-md md:rounded-lg border-2 border-transparent bg-[#14b8a6] px-2 py-1 md:px-4 md:py-2 font-medium text-white;
+}
+
+.button-light {
+  @apply w-full rounded-md md:rounded-lg border-2 border-transparent bg-[#374152] px-2 py-1 md:px-4 md:py-2 font-medium text-white;
+}

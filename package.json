@@ -1,0 +1,47 @@
+{
+  "name": "sdc-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 4000",
+    "lint": "next lint",
+    "db-sync": "npx prisma format && npx prisma db push"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@hookform/resolvers": "^3.3.1",
+    "@prisma/client": "^5.2.0",
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "classnames": "^2.3.2",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
+    "jose": "^4.14.5",
+    "moment": "^2.29.4",
+    "nanoid": "^4.0.2",
+    "next": "13.4.19",
+    "next-pwa": "^5.6.0",
+    "postcss": "8.4.29",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.46.0",
+    "react-hot-toast": "^2.4.1",
+    "react-table": "^7.8.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.2.2",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.3",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/react-table": "^7.7.15",
+    "prisma": "^5.2.0"
+  }
+}

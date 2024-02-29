@@ -1,0 +1,32 @@
+{
+  "theme_color": "#14b8a6",
+  "background_color": "#111827",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/admin",
+  "name": "Shop Savio",
+  "short_name": "Shop Savio",
+  "description": "Shop Savio - Affiliate Marketing Partner",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
